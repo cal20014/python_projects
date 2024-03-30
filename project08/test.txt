@@ -1,0 +1,17 @@
+function_16_3(x,y)
+    IF x == 1
+        RETURN y
+    ELSE
+        RETURN y + function_16_3(x - 1, y)
+
+function_16_4(x,y)
+    IF x == 0
+        RETURN 1
+    ELSE
+        RETURN y * function_16_4(x - 1, y)
+
+function_16_5(x,y)
+    IF x == 0
+        RETURN y
+    ELSE
+        RETURN 1 + function_16_5(x - 1, y)
